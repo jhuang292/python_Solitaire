@@ -1,0 +1,21 @@
+The homework asks us to implement the gameBoard.py file, the gameBoard.py file will:\
+       1. Create each card as a two-character combination of a suit (C, H, S, or D) and a value (0-9, J, Q, or K). This code has been written for us.
+       2. Deal the cards out into piles on the game board.
+       3. Determine whether a provided board is in a win state (no cards left) or a loss, and return a message.
+       4. Format and display the current contents of the board.
+       5. Check whether a pile has any cards left in it.
+       6. Translate a two-character card value to a numeric pile value.
+The board for this game should be constructed as a list of 13 piles, one for each card value. Each pile, too, should be list of 4 card strings. 
+
+To deal out the already-shuffled cards: 
+       1. Create a board list. This is what you will put the piles into.
+       2. For each of the 13 piles, create a list: 
+              1. append the current last card in the cards list - try using the pop() function without an argument to get the last card in a list AND remove it from the list simultaneously!
+              2. once the pile has 4 cards in it, append it to the board list.
+       3. Once all 13 piles are complete, the cards list should have length 0.
+
+Check a pile
+
+Win or lose
+
+Print the board
